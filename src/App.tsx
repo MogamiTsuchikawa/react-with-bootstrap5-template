@@ -1,25 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Container, Nav, Navbar, Row, Col } from 'react-bootstrap';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar>
+        <Container>
+          <Navbar.Brand>React-With-Bootstrap5</Navbar.Brand>
+        </Container>
+        <Nav.Link href='https://github.com/MogamiTsuchikawa/react-with-bootstrap5-template'>
+          GitHub
+        </Nav.Link>
+      </Navbar>
+      <Container>
+        <Row>
+          <h2>Hello, World</h2>
+        </Row>
+      </Container>
+    </>
   );
 }
 
