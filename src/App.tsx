@@ -5,7 +5,7 @@ import './App.css';
 const App = () => {
   return (
     <>
-      <Navbar>
+      <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Brand>React-With-Bootstrap5</Navbar.Brand>
         </Container>
